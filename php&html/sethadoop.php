@@ -54,14 +54,14 @@ echo iconv("gb2312","utf-8",$value);
 		</td>
 		<td>
 			<?php
-			$text = file_get_contents('/home/hadoop/hadoop-2.6.2/etc/hadoop/core-site.xml');
+			$text = file_get_contents('/home/hadoop/hadoop-2.6.5/etc/hadoop/core-site.xml');
 			?>	
 			<textarea id="showcore" name="show" cols="50" rows="30" ><?php echo $text; ?></textarea>
 		</td>
 	</tr>
 	<tr>
              <td>
-			<textarea  name="config" readonly="readonly"  style="display:none" >/home/hadoop/hadoop-2.6.2/etc/hadoop/core-site.xml</textarea>
+			<textarea  name="config" readonly="readonly"  style="display:none" >/home/hadoop/hadoop-2.6.5/etc/hadoop/core-site.xml</textarea>
 	     </td>
 	<td>
 		<input id="subcore" type="submit" value="确认提交"  >
@@ -87,14 +87,14 @@ echo iconv("gb2312","utf-8",$value);
                 </td>
                 <td>                
 			<?php
-                        $text = file_get_contents('/home/hadoop/hadoop-2.6.2/etc/hadoop/hdfs-site.xml');
+                        $text = file_get_contents('/home/hadoop/hadoop-2.6.5/etc/hadoop/hdfs-site.xml');
                         ?>
                         <textarea id="showcore" name="show" cols="50" rows="30" ><?php echo $text; ?></textarea>
                 </td>
         </tr>
         <tr>
              <td>
-			<textarea  name="config" readonly="readonly"  style="display:none">/home/hadoop/hadoop-2.6.2/etc/hadoop/hdfs-site.xml</textarea>
+			<textarea  name="config" readonly="readonly"  style="display:none">/home/hadoop/hadoop-2.6.5/etc/hadoop/hdfs-site.xml</textarea>
              </td>
              <td><input type="submit" value="确认提交"></td>
         </tr>
@@ -118,14 +118,14 @@ echo iconv("gb2312","utf-8",$value);
                 </td>
                 <td>
 	                <?php
-                        $text = file_get_contents('/home/hadoop/hadoop-2.6.2/etc/hadoop/mapred-site.xml');
+                        $text = file_get_contents('/home/hadoop/hadoop-2.6.5/etc/hadoop/mapred-site.xml');
                         ?>
                         <textarea id="showcore" name="show" cols="50" rows="30" ><?php echo $text; ?></textarea>
                 </td>
         </tr>
         <tr>
              <td>
-			<textarea  name="config" readonly="readonly"  style="display:none" >/home/hadoop/hadoop-2.6.2/etc/hadoop/mapred-site.xml</textarea>
+			<textarea  name="config" readonly="readonly"  style="display:none" >/home/hadoop/hadoop-2.6.5/etc/hadoop/mapred-site.xml</textarea>
              </td>
              <td><input type="submit" value="确认提交"></td>
         </tr>
@@ -150,14 +150,14 @@ echo iconv("gb2312","utf-8",$value);
                 </td>
                 <td>
 	                <?php
-                        $text = file_get_contents('/home/hadoop/hadoop-2.6.2/etc/hadoop/yarn-site.xml');
+                        $text = file_get_contents('/home/hadoop/hadoop-2.6.5/etc/hadoop/yarn-site.xml');
                         ?>
                         <textarea id="showcore" name="show" cols="50" rows="30" ><?php echo $text; ?></textarea>
                 </td>
         </tr>
         <tr>
              <td>
-                        <textarea  name="config" readonly="readonly"  style="display:none" >/home/hadoop/hadoop-2.6.2/etc/hadoop/yarn-site.xml</textarea>
+                        <textarea  name="config" readonly="readonly"  style="display:none" >/home/hadoop/hadoop-2.6.5/etc/hadoop/yarn-site.xml</textarea>
              </td>
              <td><input type="submit" value="确认提交"></td>
         </tr>
