@@ -6,6 +6,6 @@
    <br>
    <a href="sethadoop.php" target="showframe">hadoop配置</a>
    <br>
-   <a href="setspark.html" target="showframe">spark配置</a>
+   <a href="setspark.php" target="showframe">spark配置</a>
    </body>
 </html>

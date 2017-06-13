@@ -27,6 +27,13 @@ cd all
 #hadoop安装路径
 HADOOP_INS_PATH=/home/hadoop
 mkdir -p /home/hadoop
+
+#scala安装路径
+SCALA_INS_PATH=/home/hadoop
+
+#spark安装路径
+SPARK_INS_PATH=/home/hadoop
+
 #hadoop网卡
 HADOOP_NETWORKCARD=eth0
 
@@ -75,13 +82,42 @@ sed -i -e '/# set hadoop environment/d' ~/.bash_profile
 sed -i -e '/HADOOP_HOME=/d' ~/.bash_profile
 sed -i -e '/HADOOP_CONF_DIR=/d' ~/.bash_profile
 sed -i -e '/PATH=\$PATH:\$HADOOP_HOME/d' ~/.bash_profile
-#sed -i -e '/HADOOP_HOME_WARN_SUPPRESS=/d' ~/.bash_profile
 echo "# set hadoop environment" >> ~/.bash_profile
-echo "export HADOOP_HOME=$HADOOP_INS_PATH/hadoop-2.6.2" >> ~/.bash_profile
-echo "export HADOOP_CONF_DIR=\$HADOOP_HOME/conf" >> ~/.bash_profile
+echo "export HADOOP_HOME=$HADOOP_INS_PATH/hadoop-2.6.5" >> ~/.bash_profile
+echo "export HADOOP_CONF_DIR=\$HADOOP_HOME/etc/hadoop" >> ~/.bash_profile
 echo "export PATH=\$PATH:\$HADOOP_HOME/bin:\$HADOOP_HOME/sbin" >> ~/.bash_profile
-#echo "export HADOOP_HOME_WARN_SUPPRESS=1" >> ~/.bash_profile
 source ~/.bash_profile
+
+
+tar -zxf scala-2.10.5.tar.gz -C $SCALA_INS_PATH --touch 
+
+
+sed -i -e '/# set scala environment/d' ~/.bash_profile
+sed -i -e '/SCALA_HOME=/d' ~/.bash_profile
+sed -i -e '/PATH=\$PATH:\$SCALA_HOME/d' ~/.bash_profile
+echo "# set scala environment" >> ~/.bash_profile
+echo "export SCALA_HOME=$SCALA_INS_PATH/scala-2.10.5" >> ~/.bash_profile
+echo "export PATH=\$PATH:\$SCALA_HOME/bin" >> ~/.bash_profile
+source ~/.bash_profile
+
+
+
+tar -zxf spark-1.6.0.tar.gz -C $SPARK_INS_PATH --touch 
+
+
+sed -i -e '/# set spark environment/d' ~/.bash_profile
+sed -i -e '/SPARK_HOME=/d' ~/.bash_profile
+sed -i -e '/SPARK_CONF_DIR=/d' ~/.bash_profile
+sed -i -e '/PATH=\$PATH:\$SPARK_HOME/d' ~/.bash_profile
+echo "# set spark environment" >> ~/.bash_profile
+echo "export SPARK_HOME=$SPARK_INS_PATH/spark-1.6.0" >> ~/.bash_profile
+echo "export SPARK_CONF_DIR=\$SPARK_HOME/conf" >> ~/.bash_profile
+echo "export PATH=\$PATH:\$SPARK_HOME/bin" >> ~/.bash_profile
+source ~/.bash_profile
+
+
+
+
 
 
 #hadoop配置
