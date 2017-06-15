@@ -3,11 +3,22 @@
    <body>
    <h1>hadoop相关文件配置</h1>
 	<div style="height:50px;width:100%;">
-	<div style="width:150px;float:left"><a href="#" id="core">Hadoop CORE </a> </div>
-	<div style="width:150px;float:left"><a href="#" id="hdfs">Hadoop HDFS </a></div>
-	<div style="width:150px;float:left"><a href="#" id="mapsite">Hadoop Mapred </a></div>
-	<div style="width:150px;float:left"><a href="#" id="yarn">Hadoop YARN </a></div>
-	<div style="width:150px;float:left"><a href="#" id="slaves">Hadoop SLAVES </a></div>
+<!--
+	<div style="width:150px;float:left"><a href="#" id="core">Hadoop CORE</a></div>
+	<div style="width:150px;float:left"><a href="#" id="hdfs">Hadoop HDFS</a></div>
+	<div style="width:150px;float:left"><a href="#" id="mapsite">Hadoop Mapred</a></div>
+	<div style="width:150px;float:left"><a href="#" id="yarn">Hadoop YARN</a></div>
+	<div style="width:150px;float:left"><a href="#" id="slaves">Hadoop SLAVES</a></div>
+-->
+	<div style="width:130px;float:left"><button style="width:130px" id="core">Hadoop CORE</button></div>
+        <div style="width:130px;float:left"><button style="width:130px" id="hdfs">Hadoop HDFS</button></div>
+        <div style="width:130px;float:left"><button style="width:130px" id="mapsite">Hadoop Mapred</button></div>
+        <div style="width:130px;float:left"><button style="width:130px" id="yarn">Hadoop YARN</button></div>
+        <div style="width:130px;float:left"><button style="width:130px" id="slaves">Hadoop SLAVES</button></div>
+
+
+
+
 	</div>
 
 <script type="text/javascript">

@@ -3,9 +3,11 @@
 <h1>spark相关文件配置</h1>
 
 <div style="height:50px;width:100%;">
-<div style="width:150px;float:left"><a href="#" id="default">SPARK-default </a></div>
-<div style="width:150px;float:left"><a href="#" id="env">SPARK-env </a></div>
-<div style="width:150px;float:left"><a href="#" id="slaves">SPARK-slaves </a></div>
+
+<div style="width:130px;float:left"><button style="width:130px" id="default">SPARK DEFAULT</button></div>
+<div style="width:130px;float:left"><button style="width:130px" id="env">SPARK ENV</button></div>
+<div style="width:130px;float:left"><button style="width:130px" id="slaves">SPARK SLAVES</button></div>
+
 </div>
 
 <script type="text/javascript">
